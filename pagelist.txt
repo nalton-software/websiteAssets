@@ -1,0 +1,7 @@
+Homepage&/homepage*
+Sandy Editor&/sandyEditor*
+Minesweeper&/minesweeper*
+Chat Box&/chatbox*
+Simple Chat&/simpleChat*
+Accounts Chat&/accountsChat*
+P5 Whiteboard&/p5Whiteboard

@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    /* set this so that the sidebar can be set width/height */
+    width: 100%;
+    height: 100%;
+}
+
+    body {
+  background-color: white;
+}
+
+p {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: normal;
+}
+
+.pageTitle {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    color: #27b133; /*same as sidebar*/
+    font-size: 40px;
+    text-align: center;
+}
+
+.pageTitle img {
+    margin-bottom: -20px;
+}
+
+.topbar {
+    padding: 10px;
+    display: block;
+    background-color: #27b133; /*same as sidebar*/
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 2px 0px;
+    box-shadow: 0px 10px 16px 9px rgba(0, 0, 0, 0.05);;
+    z-index: 4;
+}
+
+.topbar button {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    color: black;
+    display: block;
+    border: 1px solid white;
+    background-color: #3cc247; /*slightly off of the default green*/
+    padding: 5px;
+}
+
+.topbar h1 {
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    margin-bottom: 5px;
+    color: white;
+}
+
+.sidebarHolder {
+    display: inline-block;
+}
+
+.sidebar {
+    vertical-align: top;
+    height: 100vh;
+    width: 160px;
+    padding-top: 20px;
+    padding: 10px;
+
+    background-color: #27b133; /*main green*/
+
+    /* repl doesn't like this, but it works*/
+    scrollbar-color: #dddddd green;
+    overflow-y: scroll;
+
+    border: #c2c0c0 solid 2px;
+    border-left: none;
+}
+
+.sidebar a {
+    color: black;
+}
+
+.mainHolder {
+    /* left mostly empty as js manipulates this */
+    vertical-align: top;
+}
+
+.main {
+    padding-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom : 0px;
+
+    margin-right: 0px;
+    word-wrap: break-word;
+    word-break: break-word;
+    overflow-y: scroll;
+}
