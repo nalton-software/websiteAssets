@@ -63,17 +63,20 @@ async function getLinksAndNames() {
 var containerDiv = document.getElementById('sidebar');
 
 async function makeLinks() { // fetch data from file, split up, turn into links
-    var linkSTR = await getLinksAndNames();
-    var linksAndNames = linkSTR.split('*');
+    var linkStr = await getLinksAndNames();
+    var linksAndNames = linkStr.split('\n');
 
-    for (var i = 0; i < linksAndNames.length; i ++) {
-        var linkAndName = linksAndNames[i].split('&');
-        var name = linkAndName[0];
-        var link = linkAndName[1];
-        createLink(name, link, containerDiv);
-        createBr(containerDiv); // for spacing
-        createBr(containerDiv);
-    }
+    linksAndNames.forEach(linkAndNameStr => {
+        // Don't bother parsing empty lines
+        if (linkAndName.length > 0) {
+            var linkAndName = linkAndNameStr.split('|');
+            var name = linkAndName[0];
+            var link = linkAndName[1];
+            createLink(name, link, containerDiv);
+            createBr(containerDiv); // for spacing
+            createBr(containerDiv);
+        }
+    });
 }
 
 function resizeMainAndSidebar() {
@@ -104,6 +107,7 @@ setTimeout(() => {
 makeLinks();
 resizeMainAndSidebar();
 setTimeout(resizeMainAndSidebar, 500); // in case the page is slow to load content (especially if created dynamically)
+window.addEventListener('resize', resizeMainAndSidebar);
 toggleSidebar(true);
 setTimeout(() => toggleSidebar(true), 100);
 setTimeout(() => toggleSidebar(true), 500);
