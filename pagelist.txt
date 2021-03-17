@@ -1,6 +1,7 @@
 Homepage|/homepage
 Sandy Editor|/sandyEditor
 Minesweeper|/minesweeper
+Snake|/snake
 Chat Box|/chatbox
 Accounts Chat|/accountsChat
 P5 Whiteboard|/p5Whiteboard
