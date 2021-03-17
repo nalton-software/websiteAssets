@@ -68,7 +68,7 @@ async function makeLinks() { // fetch data from file, split up, turn into links
 
     linksAndNames.forEach(linkAndNameStr => {
         // Don't bother parsing empty lines
-        if (linkAndName.length > 0) {
+        if (linkAndNameStr.length > 0) {
             var linkAndName = linkAndNameStr.split('|');
             var name = linkAndName[0];
             var link = linkAndName[1];
