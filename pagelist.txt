@@ -3,6 +3,7 @@ Sandy Editor|/sandyEditor
 Minesweeper|/minesweeper
 Snake|/snake
 Boids simulation|/boids
+Rick Roll Detector|/is-it-rick
 Chat Box|/chatbox
 Accounts Chat|/accountsChat
 P5 Whiteboard|/p5Whiteboard
