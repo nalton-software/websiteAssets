@@ -1,9 +1,9 @@
 Homepage|/homepage
-Sandy Editor|/sandyEditor
 Minesweeper|/minesweeper
 Snake|/snake
-Boids simulation|/boids
+Old Minesweeper|/old-minesweeper
+Boids Simulation|/boids
 Rick Roll Detector|/is-it-rick
-Chat Box|/chatbox
+Sandy Editor|/sandyEditor
 Accounts Chat|/accountsChat
 P5 Whiteboard|/p5Whiteboard
